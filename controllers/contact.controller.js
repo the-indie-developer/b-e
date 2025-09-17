@@ -23,7 +23,7 @@ const sendMsg = async (req, res) => {
 
 Dear Admin,
 
-This email is to inform you of a new inquiry submitted through the MeriPehchaan website.
+This email is to inform you of a new inquiry submitted through the Meri Pehchaan website.
 
 Visitor Details:
 
@@ -47,9 +47,9 @@ MeriPehchaan Bot
 
       await sendEmail({
         email:email,
-        subject:'Thank You for Your Inquiry - MeriPehchaan',
+        subject:'Thank You for Your Inquiry - Meri Pehchaan',
         message:`
-        Subject: Thank You for Your Inquiry - MeriPehchaan
+
 
 Dear ${name},
 
@@ -65,7 +65,7 @@ ${message}
 We look forward to connecting with you soon.
 
 Best regards,
-The MeriPehchaan Team
+The Meri Pehchaan Team
         `
        
       })

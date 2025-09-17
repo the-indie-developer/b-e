@@ -33,6 +33,10 @@ const userSchema = new mongoose.Schema({
         type:String,
         enum:['Education Awareness','Career Counseling','Women Empowerment','Skills Training','Environmental Protection',],
         default:'Education Awareness'
+    },
+    subscribed:{
+        type:Boolean,
+        default:false
     }
   
 },{timestamps:true})
