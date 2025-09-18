@@ -9,10 +9,13 @@ const port = process.env.PORT
 
 const app = express()
 
+const localUrl = `http://localhost:${port}`
+
+const allowedOrigins = [localUrl,process.env.FRONTEND_URL]
 
 app.use(express.json())
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
+    origin:allowedOrigins,
     credentials:true
 }))
 
