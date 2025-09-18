@@ -7,9 +7,9 @@ dotenv.config()
 dbConnection();
 const port = process.env.PORT
 
-const app = express()
 
-const localUrl = `http://localhost:${port}`
+const app = express()
+const localUrl = `http://localhost:${process.env.LOCAL_PORT}}`
 
 const allowedOrigins = [localUrl,process.env.FRONTEND_URL]
 
