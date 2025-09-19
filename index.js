@@ -11,7 +11,7 @@ const port = process.env.PORT
 const app = express()
 
 
-const allowedOrigins = [process.env.LOCAL_PORT,process.env.FRONTEND_URL]
+const allowedOrigins = [process.env.LOCAL_PORT,process.env.FRONTEND_URL,process.env.DOMAIN_URL]
 
 app.use(express.json())
 app.use(cors({

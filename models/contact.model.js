@@ -11,7 +11,8 @@ const contactSchema = new mongoose.Schema({
     },
     message:{
         type:String,
-        required:true
+        required:true,
+        expires: 3600
     }
 
 },{timestamps:true})
